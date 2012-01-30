@@ -1,0 +1,1799 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<script id="bug.surrogate">var urchinTracker = function () {
+}, _gat = {_getTracker:function () {
+    return{__noSuchMethod__:function () {
+    }, _link:function (o) {
+        if (o)location.href = o;
+    }, _linkByPost:function () {
+        return true;
+    }, _getLinkerUrl:function (o) {
+        return o;
+    }, _trackEvent:function () {
+    }}
+}}</script>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Demonstration of a Reservation System</title>
+    <meta name="ROBOTS" content="NOFOLLOW">
+    <link href="Meeting_Rooms_files/schedule-6f84f8b8fb6a6369cacd7167072fbc0f.css" rel="stylesheet" type="text/css">
+    <script ghostid="2" ghostname="Google Analytics" src="Meeting_Rooms_files/ga.js" async=""
+            type="text/javascript"></script>
+    <script src="Meeting_Rooms_files/prototype.js" type="text/javascript"></script>
+    <script src="Meeting_Rooms_files/effects.js" type="text/javascript"></script>
+    <script src="Meeting_Rooms_files/dragdrop.js" type="text/javascript"></script>
+    <script type="text/javascript"><!--
+    if (typeof(Prototype) == 'undefined') document.write('<script type="text/javascript" src="/javascripts/prototype.js"><\/script><script type="text/javascript" src="/javascripts/effects.js"><\/script><script type="text/javascript" src="/javascripts/dragdrop.js"><\/script>')
+    //--></script>
+    <script src="Meeting_Rooms_files/schedule-279fb1cebfead3fcc3bf365e39ef6ccf.js" type="text/javascript"></script>
+    <!--[if lte IE 6]>
+    <style type="text/css">
+        .chip {
+            padding-right: 3px
+        }
+
+        .head, .nohead, .chip .in .nohead {
+            font-size: 8px;
+            font-weight: normal
+        }
+    </style><![endif]-->
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-63366-4'])
+        if (/SS_keep=/.test(document.cookie)) _gaq.push(['_setCustomVar', 1, 'Role', 'Admin', 1]);
+        else {
+            if (/SS_d+_keep=/.test(document.cookie)) _gaq.push(['_setCustomVar', 1, 'Role', 'User', 1])
+        }
+        ;
+        _gaq.push(['_addIgnoredOrganic', 'supersaas'], ['_addIgnoredOrganic', 'supersaas.com'], ['_trackPageview']);
+        (function () {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+</head>
+<body>
+<img alt="SuperSaaS logo" class="logo" src="static/trilane-logo-supersaas-1.png">
+<img alt="" class="swoosh" src="Meeting_Rooms_files/swoosh.gif">
+<div class="spacer">&nbsp;</div>
+<div class="schedule_content">
+</div>
+<div class="flashbox"><p class="flash">&nbsp;<span id="flash" style="display:none"></span>&nbsp;</p>
+
+    <div class="navContainer">
+        <div class="ofc"></div>
+        <div class="ifc"></div>
+        <div class="month">
+            <table cellpadding="0" cellspacing="0">
+                <thead>
+                <tr class="navhead">
+                    <th></th>
+                    <th></th>
+                    <th class="j" onclick="base_jumper('week',0,-1)"><img alt="«" src="Meeting_Rooms_files/arrow_l.png">
+                    </th>
+                    <th colspan="3">January 2012</th>
+                    <th class="j" onclick="base_jumper('week',0,1)"><img alt="»" src="Meeting_Rooms_files/arrow_r.png">
+                    </th>
+                    <th></th>
+                </tr>
+                <tr class="dayhead">
+                    <th style="padding: 0px;"></th>
+                    <th>Sun</th>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wed</th>
+                    <th>Thu</th>
+                    <th>Fri</th>
+                    <th>Sat</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td class="leftbar"></td>
+                    <td class="closed" onclick="jumper('week',0)">1</td>
+                    <td onclick="jumper('week',1)">2</td>
+                    <td onclick="jumper('week',2)">3</td>
+                    <td onclick="jumper('week',3)">4</td>
+                    <td onclick="jumper('week',4)">5</td>
+                    <td onclick="jumper('week',5)">6</td>
+                    <td class="closed" onclick="jumper('week',6)">7</td>
+                </tr>
+                <tr>
+                    <td class="leftbar"></td>
+                    <td class="closed" onclick="jumper('week',7)">8</td>
+                    <td onclick="jumper('week',8)">9</td>
+                    <td onclick="jumper('week',9)">10</td>
+                    <td onclick="jumper('week',10)">11</td>
+                    <td onclick="jumper('week',11)">12</td>
+                    <td onclick="jumper('week',12)">13</td>
+                    <td class="closed" onclick="jumper('week',13)">14</td>
+                </tr>
+                <tr>
+                    <td class="leftbar"></td>
+                    <td class="closed" onclick="jumper('week',14)">15</td>
+                    <td onclick="jumper('week',15)">16</td>
+                    <td onclick="jumper('week',16)">17</td>
+                    <td onclick="jumper('week',17)">18</td>
+                    <td onclick="jumper('week',18)">19</td>
+                    <td onclick="jumper('week',19)">20</td>
+                    <td class="closed" onclick="jumper('week',20)">21</td>
+                </tr>
+                <tr>
+                    <td class="leftbar"></td>
+                    <td class="closed" onclick="jumper('week',21)">22</td>
+                    <td onclick="jumper('week',22)">23</td>
+                    <td onclick="jumper('week',23)">24</td>
+                    <td onclick="jumper('week',24)">25</td>
+                    <td onclick="jumper('week',25)">26</td>
+                    <td onclick="jumper('week',26)">27</td>
+                    <td class="closed" onclick="jumper('week',27)">28</td>
+                </tr>
+                <tr>
+                    <td class="leftbar"></td>
+                    <td class="selectd" onclick="jumper('day',28)">29</td>
+                    <td class="busy bcol0 today" onclick="jumper('day',29)">30</td>
+                    <td class="busy bcol0 selectd" onclick="jumper('day',30)">31</td>
+                    <td class="busy bcol0 other selectd" onclick="jumper('day',31)">1</td>
+                    <td class="busy bcol0 other selectd" onclick="jumper('day',32)">2</td>
+                    <td class="busy bcol0 other selectd" onclick="jumper('day',33)">3</td>
+                    <td class="other selectd" onclick="jumper('day',34)">4</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<div class="tabContainer">
+    <div class="selectTab">
+        <div class="ofc"></div>
+        <div class="ifc"></div>
+        <table>
+            <tbody>
+            <tr>
+                <td class="j rt" ><a href="Meeting_Rooms_2.htm" ><img alt="«" src="Meeting_Rooms_files/arrow_l.png"></a>
+                </td>
+                <th width="100px">Week 5</th>
+                <th class="j lt"  width="40px"><a href="Meeting_Rooms_2.htm" ><img alt="»" src="Meeting_Rooms_files/arrow_r.png"></a>
+                </th>
+                <th class="todaylink"></th>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<table class="weekCont" id="container" cellpadding="0" cellspacing="0">
+    <thead>
+    <tr class="dayHeading">
+        <th width="41px">&nbsp;</th>
+        <th>
+            <div class="fixwidth">Sun 29/1</div>
+        </th>
+        <th class="todayHead">
+            <div class="fixwidth">Mon 30/1</div>
+        </th>
+        <th>
+            <div class="fixwidth">Tue 31/1</div>
+        </th>
+        <th>
+            <div class="fixwidth">Wed 1/2</div>
+        </th>
+        <th>
+            <div class="fixwidth">Thu 2/2</div>
+        </th>
+        <th>
+            <div class="fixwidth">Fri 3/2</div>
+        </th>
+        <th>
+            <div class="fixwidth">Sat 4/2</div>
+        </th>
+    </tr>
+    </thead>
+    <tbody style="line-height:21px">
+    <tr>
+        <td>
+            <div class="hour">
+                <table width="100%" cellpadding="2" cellspacing="0">
+                    <tbody>
+                    <tr class="e">
+                        <td>Midnight</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>1&nbsp;am</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>2&nbsp;am</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>3&nbsp;am</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>4&nbsp;am</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>5&nbsp;am</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>6&nbsp;am</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>7&nbsp;am</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>8&nbsp;am</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>9&nbsp;am</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>10&nbsp;am</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>11&nbsp;am</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>Noon</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>1&nbsp;pm</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>2&nbsp;pm</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>3&nbsp;pm</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>4&nbsp;pm</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>5&nbsp;pm</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>6&nbsp;pm</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </td>
+        <td>
+            <div class="day closed" onclick="chandle(event,28,0)">
+                <div id="e28"></div>
+                <table class="l" width="100%" cellpadding="0" cellspacing="0">
+                    <tbody>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </td>
+        <td>
+            <div class="day today rd" onclick="chandle(event,29,0)">
+                <div id="e29"></div>
+                <div style="top:0px;left:0.0%;right:66.6666666666667%" class="rd chip" id="c3134054_29" title="1122">
+                    <div class="of bcol0"></div>
+                    <div class="if bcol0"></div>
+                    <div style="height:47px" class="out f col0">
+                        <div class="head bcol0">12:00am&nbsp;− 1:00am</div>
+                        <div class="in"></div>
+                    </div>
+                    <div class="if f col0 lb rb"></div>
+                    <div class="of bcol0"></div>
+                </div>
+                <div style="top:52px;left:0.0%;right:66.6666666666667%" class="rd chip" id="c3136416_29"
+                     title="cofee with someone">
+                    <div class="of bcol0"></div>
+                    <div class="if bcol0"></div>
+                    <div style="height:47px" class="out f col0">
+                        <div class="head bcol0">1:00am&nbsp;− 2:00am</div>
+                        <div class="in"></div>
+                    </div>
+                    <div class="if f col0 lb rb"></div>
+                    <div class="of bcol0"></div>
+                </div>
+                <table class="l" width="100%" cellpadding="0" cellspacing="0">
+                    <tbody>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </td>
+        <td>
+            <div class="day rd" onclick="chandle(event,30,0)">
+                <div id="e30"></div>
+                <div style="top:26px;left:66.6666666666667%;right:0.0%" class="rd chip" id="c3138754_30"
+                     title="THIS IS MY NAME">
+                    <div class="of bcol2"></div>
+                    <div class="if bcol2"></div>
+                    <div style="height:255px" class="out f col2">
+                        <div class="head bcol2">12:30am&nbsp;− 5:30am</div>
+                        <div class="in"></div>
+                    </div>
+                    <div class="if f col2 lb rb"></div>
+                    <div class="of bcol2"></div>
+                </div>
+                <div style="top:208px;left:0.0%;right:66.6666666666667%" class="rd chip" id="c3142951_30"
+                     title="Early Risers">
+                    <div class="of bcol0"></div>
+                    <div class="if bcol0"></div>
+                    <div style="height:73px" class="out f col0">
+                        <div class="head bcol0">4:00am&nbsp;− 5:30am</div>
+                        <div class="in"></div>
+                    </div>
+                    <div class="if f col0 lb rb"></div>
+                    <div class="of bcol0"></div>
+                </div>
+                <div style="top:338px;left:33.3333333333333%;right:33.3333333333333%" class="rd chip" id="c3143254_30"
+                     title="fsd">
+                    <div class="of bcol1"></div>
+                    <div class="if bcol1"></div>
+                    <div style="height:47px" class="out f col1">
+                        <div class="head bcol1">6:30am&nbsp;− 7:30am</div>
+                        <div class="in"></div>
+                    </div>
+                    <div class="if f col1 lb rb"></div>
+                    <div class="of bcol1"></div>
+                </div>
+                <div style="top:520px;left:0.0%;right:66.6666666666667%" class="rd chip" id="c3131586_30"
+                     title="Team meeting 1">
+                    <div class="of bcol0"></div>
+                    <div class="if bcol0"></div>
+                    <div style="height:47px" class="out f col0">
+                        <div class="head bcol0">10:00am&nbsp;− 11:00am</div>
+                        <div class="in"></div>
+                    </div>
+                    <div class="if f col0 lb rb"></div>
+                    <div class="of bcol0"></div>
+                </div>
+                <div style="top:572px;left:33.3333333333333%;right:33.3333333333333%" class="rd chip" id="c3131592_30"
+                     title="Team meeting 2">
+                    <div class="of bcol1"></div>
+                    <div class="if bcol1"></div>
+                    <div style="height:99px" class="out f col1">
+                        <div class="head bcol1">11:00am&nbsp;− 1:00pm</div>
+                        <div class="in"></div>
+                    </div>
+                    <div class="if f col1 lb rb"></div>
+                    <div class="of bcol1"></div>
+                </div>
+                <div style="top:624px;left:66.6666666666667%;right:0.0%" class="rd chip" id="c3131598_30"
+                     title="Team meeting 3 student ">
+                    <div class="of bcol2"></div>
+                    <div class="if bcol2"></div>
+                    <div style="height:151px" class="out f col2">
+                        <div class="head bcol2">12:00pm&nbsp;− 3:00pm</div>
+                        <div class="in"></div>
+                    </div>
+                    <div class="if f col2 lb rb"></div>
+                    <div class="of bcol2"></div>
+                </div>
+                <table class="l" width="100%" cellpadding="0" cellspacing="0">
+                    <tbody>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </td>
+        <td>
+            <div class="day rd" onclick="chandle(event,31,0)">
+                <div id="e31"></div>
+                <div style="top:208px;left:0.0%;right:66.6666666666667%" class="rd chip" id="c3142936_31"
+                     title="Early Risers">
+                    <div class="of bcol0"></div>
+                    <div class="if bcol0"></div>
+                    <div style="height:73px" class="out f col0">
+                        <div class="head bcol0">4:00am&nbsp;− 5:30am</div>
+                        <div class="in"></div>
+                    </div>
+                    <div class="if f col0 lb rb"></div>
+                    <div class="of bcol0"></div>
+                </div>
+                <div style="top:286px;left:0.0%;right:66.6666666666667%" class="rd chip" id="c3136417_31" title="demo">
+                    <div class="of bcol0"></div>
+                    <div class="if bcol0"></div>
+                    <div style="height:47px" class="out f col0">
+                        <div class="head bcol0">5:30am&nbsp;− 6:30am</div>
+                        <div class="in"></div>
+                    </div>
+                    <div class="if f col0 lb rb"></div>
+                    <div class="of bcol0"></div>
+                </div>
+                <div style="top:520px;left:0.0%;right:66.6666666666667%" class="rd chip" id="c3131587_31"
+                     title="Team meeting 1">
+                    <div class="of bcol0"></div>
+                    <div class="if bcol0"></div>
+                    <div style="height:47px" class="out f col0">
+                        <div class="head bcol0">10:00am&nbsp;− 11:00am</div>
+                        <div class="in"></div>
+                    </div>
+                    <div class="if f col0 lb rb"></div>
+                    <div class="of bcol0"></div>
+                </div>
+                <div style="top:624px;left:66.6666666666667%;right:0.0%" class="rd chip" id="c3131599_31"
+                     title="Team meeting 3">
+                    <div class="of bcol2"></div>
+                    <div class="if bcol2"></div>
+                    <div style="height:151px" class="out f col2">
+                        <div class="head bcol2">12:00pm&nbsp;− 3:00pm</div>
+                        <div class="in"></div>
+                    </div>
+                    <div class="if f col2 lb rb"></div>
+                    <div class="of bcol2"></div>
+                </div>
+                <div style="top:806px;left:0.0%;right:66.6666666666667%" class="rd chip" id="c3132248_31" title="">
+                    <div class="of bcol0"></div>
+                    <div class="if bcol0"></div>
+                    <div style="height:47px" class="out f col0">
+                        <div class="head bcol0">3:30pm&nbsp;− 4:30pm</div>
+                        <div class="in"></div>
+                    </div>
+                    <div class="if f col0 lb rb"></div>
+                    <div class="of bcol0"></div>
+                </div>
+                <table class="l" width="100%" cellpadding="0" cellspacing="0">
+                    <tbody>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </td>
+        <td>
+            <div class="day rd" onclick="chandle(event,32,0)">
+                <div id="e32"></div>
+                <div style="top:26px;left:0.0%;right:66.6666666666667%" class="rd chip" id="c3139899_32" title="">
+                    <div class="of bcol0"></div>
+                    <div class="if bcol0"></div>
+                    <div style="height:47px" class="out f col0">
+                        <div class="head bcol0">12:30am&nbsp;− 1:30am</div>
+                        <div class="in"></div>
+                    </div>
+                    <div class="if f col0 lb rb"></div>
+                    <div class="of bcol0"></div>
+                </div>
+                <div style="top:208px;left:0.0%;right:66.6666666666667%" class="rd chip" id="c3142937_32"
+                     title="Early Risers">
+                    <div class="of bcol0"></div>
+                    <div class="if bcol0"></div>
+                    <div style="height:73px" class="out f col0">
+                        <div class="head bcol0">4:00am&nbsp;− 5:30am</div>
+                        <div class="in"></div>
+                    </div>
+                    <div class="if f col0 lb rb"></div>
+                    <div class="of bcol0"></div>
+                </div>
+                <div style="top:650px;left:66.6666666666667%;right:0.0%" class="rd chip" id="c3133110_32"
+                     title="booking ">
+                    <div class="of bcol2"></div>
+                    <div class="if bcol2"></div>
+                    <div style="height:47px" class="out f col2">
+                        <div class="head bcol2">12:30pm&nbsp;− 1:30pm</div>
+                        <div class="in"></div>
+                    </div>
+                    <div class="if f col2 lb rb"></div>
+                    <div class="of bcol2"></div>
+                </div>
+                <table class="l" width="100%" cellpadding="0" cellspacing="0">
+                    <tbody>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </td>
+        <td>
+            <div class="day rd" onclick="chandle(event,33,0)">
+                <div id="e33"></div>
+                <div style="top:208px;left:0.0%;right:66.6666666666667%" class="rd chip" id="c3142938_33"
+                     title="Early Risers">
+                    <div class="of bcol0"></div>
+                    <div class="if bcol0"></div>
+                    <div style="height:73px" class="out f col0">
+                        <div class="head bcol0">4:00am&nbsp;− 5:30am</div>
+                        <div class="in"></div>
+                    </div>
+                    <div class="if f col0 lb rb"></div>
+                    <div class="of bcol0"></div>
+                </div>
+                <div style="top:390px;left:0.0%;right:66.6666666666667%" class="rd chip" id="c3140406_33" title="qsd">
+                    <div class="of bcol0"></div>
+                    <div class="if bcol0"></div>
+                    <div style="height:47px" class="out f col0">
+                        <div class="head bcol0">7:30am&nbsp;− 8:30am</div>
+                        <div class="in"></div>
+                    </div>
+                    <div class="if f col0 lb rb"></div>
+                    <div class="of bcol0"></div>
+                </div>
+                <table class="l" width="100%" cellpadding="0" cellspacing="0">
+                    <tbody>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </td>
+        <td>
+            <div class="day closed" onclick="chandle(event,34,0)">
+                <div id="e34"></div>
+                <table class="l" width="100%" cellpadding="0" cellspacing="0">
+                    <tbody>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="e">
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr class="o">
+                        <td>&nbsp;</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </td>
+    </tr>
+    </tbody>
+</table>
+<div class="ifc"></div>
+<div class="ofc"></div>
+</div>
+
+<div class="dialogwindow" id="oldres" style="position: absolute; left: 453px; top: 599px; display: none;">
+    <form accept-charset="UTF-8" action="/schedule/demo/Meeting_Rooms?day=30&amp;month=1&amp;year=2012&amp;view=week"
+          method="post">
+        <div style="margin:0;padding:0;display:inline"><input name="utf8" value="✓" type="hidden"></div>
+        <table cellpadding="0" cellspacing="0">
+            <tbody>
+            <tr>
+                <td colspan="2">
+                    <div class="ofb"></div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <div class="ifb"></div>
+                </td>
+            </tr>
+            <tr>
+                <td class="dialoghead"><span id="oldres_edit">Edit Reservation</span><span id="oldres_view"
+                                                                                           style="display:none">View Reservation</span>
+                </td>
+                <td class="close" onclick="hideDialog('oldres')"><img src="Meeting_Rooms_files/close.gif" alt="Close">
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        <table cellpadding="0" cellspacing="0">
+            <tbody>
+            <tr>
+                <td>
+                    <div class="ofbl"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="ifbl"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table class="dialoginside" cellspacing="4">
+                        <tbody>
+                        <tr style="display: none;" id="oldres_error">
+                            <td colspan="3"></td>
+                        </tr>
+                        <!--[form:reservation]-->
+
+                        <tr>
+                            <td><label for="oldres_start_time">When</label></td>
+                            <td colspan="2">
+                                <table cellpadding="0" cellspacing="0">
+                                    <tbody>
+                                    <tr>
+                                        <td><input value="2012-01-31 12:30am" class="c" id="oldres_start_time"
+                                                   name="oldres[start_time]" onblur="hide_datepick(this,60,true)"
+                                                   onfocus="show_datepick(this,0)" size="18" type="text"></td>
+                                        <td><label for="oldres_finish_time">&nbsp;to&nbsp;</label></td>
+                                        <td><input value="2012-01-31 5:30am" class="c" id="oldres_finish_time"
+                                                   name="oldres[finish_time]" onblur="hide_datepick(this,60)"
+                                                   onfocus="show_datepick(this,0)" size="18" type="text"></td>
+                                    </tr>
+                                    <tr class="c g s">
+                                        <td id="oldres_startm"></td>
+                                        <td></td>
+                                        <td id="oldres_finishm"></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr id="oldres_resr" style="display: none;">
+                            <td>Description</td>
+                            <td id="oldres_res" colspan="2"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="oldres_description">Description</label></td>
+                            <td><textarea cols="40" id="oldres_description" name="oldres[description]" rows="2">THIS IS
+                                MY NAME</textarea></td>
+                            <td valign="top"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="oldres_full_name">Full&nbsp;name</label></td>
+                            <td><input value="fasdfasdfasdfa" id="oldres_full_name" maxlength="50"
+                                       name="oldres[full_name]" size="30" type="text"></td>
+                            <td valign="top"></td>
+                        </tr>
+
+
+                        <tr>
+                            <td><label for="oldres_resource_id">Meeting Rooms</label></td>
+                            <td><select id="oldres_resource_id" name="oldres[resource_id]" onchange="reprice(this.id)">
+                                <option value="110787">Meeting Room 1</option>
+                                <option value="110788">Meeting Room 2</option>
+                                <option selected="selected" value="110789">Meeting Room 3</option>
+                            </select></td>
+                            <td valign="top"></td>
+                        </tr>
+                        <tr id="oldres_repeat">
+                            <td>Repeat</td>
+                            <td colspan="2">
+                                <table cellpadding="0" cellspacing="0">
+                                    <tbody>
+                                    <tr>
+                                        <td><select id="oldres_repeater" name="oldres[repeater]"
+                                                    onchange="showuntil(this)">
+                                            <option selected="selected" value="0">None</option>
+                                            <option value="1">Daily</option>
+                                            <option value="2">Weekly</option>
+                                            <option value="3">Bi-weekly</option>
+                                            <option value="4">Monthly by date</option>
+                                            <option value="5">Monthly by day</option>
+                                        </select></td>
+                                        <td id="oldres_until" style="display: none; padding: 0px 4px;">until</td>
+                                        <td id="oldres_until2" style="display: none;"><input id="oldres_until_time"
+                                                                                             name="oldres[until_time]"
+                                                                                             onblur="hide_datepick()"
+                                                                                             onfocus="show_datepick(this,0)"
+                                                                                             size="18"
+                                                                                             style="text-align: center;"
+                                                                                             type="text"></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr id="oldres_changeS" style="display: none;">
+                            <td>Change</td>
+                            <td colspan="2" class="s"><label><input checked="checked" id="oldres_change_0"
+                                                                    name="oldres[change]" value="0" type="radio">this
+                                one </label> <label><input id="oldres_change_1" name="oldres[change]" value="1"
+                                                           type="radio">this and following </label></td>
+                        </tr>
+                        <tr id="oldres_statrow" style="display: none;">
+                            <td>
+                                Status
+                            </td>
+                            <td id="oldres_status"></td>
+                        </tr>
+                        <tr id="oldrescreated_by" class="small">
+                            <td>Created&nbsp;on</td>
+                            <td colspan="2" id="oldres_created_by">2012-01-30 7:29am</td>
+                        </tr>
+                        <tr id="oldresupdated_by" class="small" style="">
+                            <td>Updated&nbsp;on</td>
+                            <td colspan="2" id="oldres_updated_by">2012-01-30 9:19am</td>
+                        </tr>
+                        <!--[eoform:reservation]-->
+
+
+                        <tr>
+                            <td><img src="Meeting_Rooms_files/ical.gif" alt="iCal"
+                                     title="Download reservation as iCalendar file" onclick="download_ical('oldres')"
+                                     class="j">
+                                <img src="Meeting_Rooms_files/progress.gif" style="display: none;" id="oldres_progress"
+                                     alt="Busy..."></td>
+                            <td colspan="2" align="center"><span id="oldres_editlink"><input value="3138754"
+                                                                                             id="oldres_id"
+                                                                                             name="oldres[id]"
+                                                                                             type="hidden">
+    <input class="but" id="oldres_sedit" name="edit" onclick="return showIndicator('oldres_progress')"
+           value="Update Reservation" type="submit">&nbsp;<input class="but" id="oldres_sdestroy" name="destroy"
+                                                                 onclick="return removeRes('oldres')"
+                                                                 value="Delete Reservation" type="submit"></span>
+                                <a href="javascript:void(0)" onclick="hideDialog('oldres');"
+                                   class="small">Close</a><input value="453" id="oldres_xpos" name="oldres[xpos]"
+                                                                 type="hidden"><input value="599" id="oldres_ypos"
+                                                                                      name="oldres[ypos]" type="hidden">
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="ifb"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="ofb"></div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </form>
+</div>
+
+
+<div class="dialogwindow" id="reservation" style="position: absolute; left: 404px; top: 596px; display: none;">
+    <form accept-charset="UTF-8" action="/schedule/demo/Meeting_Rooms?day=30&amp;month=1&amp;year=2012&amp;view=week"
+          method="post">
+        <div style="margin:0;padding:0;display:inline"><input name="utf8" value="✓" type="hidden"></div>
+        <table cellpadding="0" cellspacing="0">
+            <tbody>
+            <tr>
+                <td colspan="2">
+                    <div class="ofb"></div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <div class="ifb"></div>
+                </td>
+            </tr>
+            <tr>
+                <td class="dialoghead">New Reservation</td>
+                <td class="close" onclick="hideDialog('reservation')"><img src="Meeting_Rooms_files/close.gif"
+                                                                           alt="Close"></td>
+            </tr>
+            </tbody>
+        </table>
+        <table cellpadding="0" cellspacing="0">
+            <tbody>
+            <tr>
+                <td>
+                    <div class="ofbl"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="ifbl"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table class="dialoginside" cellspacing="4">
+                        <tbody>
+                        <tr style="display: none;" id="reservation_error">
+                            <td colspan="3"></td>
+                        </tr>
+                        <!--[form:reservation]-->
+
+                        <tr>
+                            <td><label for="reservation_start_time">When</label></td>
+                            <td colspan="2">
+                                <table cellpadding="0" cellspacing="0">
+                                    <tbody>
+                                    <tr>
+                                        <td><input value="2012-01-31 1:30am" class="c" id="reservation_start_time"
+                                                   name="reservation[start_time]" onblur="hide_datepick(this,60,true)"
+                                                   onfocus="show_datepick(this,0)" size="18" type="text"></td>
+                                        <td><label for="reservation_finish_time">&nbsp;to&nbsp;</label></td>
+                                        <td><input value="2012-01-31 2:30am" class="c" id="reservation_finish_time"
+                                                   name="reservation[finish_time]" onblur="hide_datepick(this,60)"
+                                                   onfocus="show_datepick(this,0)" size="18" type="text"></td>
+                                    </tr>
+                                    <tr class="c g s">
+                                        <td id="reservation_startm"></td>
+                                        <td></td>
+                                        <td id="reservation_finishm"></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td><label for="reservation_description">Description</label></td>
+                            <td><textarea cols="40" id="reservation_description" name="reservation[description]"
+                                          rows="2"></textarea></td>
+                            <td valign="top"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="reservation_full_name">Full&nbsp;name</label></td>
+                            <td><input id="reservation_full_name" maxlength="50" name="reservation[full_name]" size="30"
+                                       type="text"></td>
+                            <td valign="top"></td>
+                        </tr>
+
+
+                        <tr>
+                            <td><label for="reservation_resource_id">Specialists</label></td>
+                            <td><select id="reservation_resource_id" name="reservation[resource_id]"
+                                        onchange="reprice(this.id)">
+                                <option value="110787">Julie Knowles</option>
+                                <option selected="selected" value="110788">Sandra Bowles</option>
+                                <option value="110789">Tina Howles</option>
+                            </select></td>
+                            <td valign="top"></td>
+                        </tr>
+                        <tr id="reservation_repeat">
+                            <td>Repeat</td>
+                            <td colspan="2">
+                                <table cellpadding="0" cellspacing="0">
+                                    <tbody>
+                                    <tr>
+                                        <td><select id="reservation_repeater" name="reservation[repeater]"
+                                                    onchange="showuntil(this)">
+                                            <option selected="selected" value="0">None</option>
+                                            <option value="1">Daily</option>
+                                            <option value="2">Weekly</option>
+                                            <option value="3">Bi-weekly</option>
+                                            <option value="4">Monthly by date</option>
+                                            <option value="5">Monthly by day</option>
+                                        </select></td>
+                                        <td id="reservation_until" style="display: none; padding: 0px 4px;">until</td>
+                                        <td id="reservation_until2" style="display: none;"><input
+                                                id="reservation_until_time" name="reservation[until_time]"
+                                                onblur="hide_datepick()" onfocus="show_datepick(this,0)" size="18"
+                                                style="text-align: center;" type="text"></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        <!--[eoform:reservation]-->
+
+                        <tr>
+                            <td><img src="Meeting_Rooms_files/progress.gif" style="display: none;"
+                                     id="reservation_progress" alt="Busy..."></td>
+                            <td colspan="2" align="center">
+                                <input class="but" name="commit" onclick="return showIndicator('reservation_progress')"
+                                       value="Create Reservation" type="submit"> &nbsp;&nbsp;
+                                <a href="javascript:void(0)" onclick="hideDialog('reservation');"
+                                   class="small">Cancel</a><input value="404" id="reservation_xpos"
+                                                                  name="reservation[xpos]" type="hidden"><input
+                                    value="596" id="reservation_ypos" name="reservation[ypos]" type="hidden"></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="ifb"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="ofb"></div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </form>
+</div>
+
+
+<table id="datepick" style="display: none;" onclick="picked_el.focus()" cellpadding="0" cellspacing="0">
+    <tbody>
+    <tr>
+        <td>
+            <div class="ifc"></div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <table class="datepick" cellspacing="0">
+                <thead>
+                <tr>
+                    <th id="down">
+                        <img alt="«" src="Meeting_Rooms_files/arrow_l.png"></th>
+                    <th id="pickhead" colspan="5">m</th>
+                    <th id="up"><img alt="»" src="Meeting_Rooms_files/arrow_r.png"></th>
+                </tr>
+                <tr id="pickdays">
+                    <th>d</th>
+                </tr>
+                </thead>
+                <tbody id="picknumbers">
+                <tr>
+                    <td>d</td>
+                </tr>
+                </tbody>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <div class="ifc"></div>
+        </td>
+    </tr>
+    </tbody>
+</table>
+
+
+<script type="text/javascript"><!--
+new Draggable('oldres', {onEnd:dragEnd, handle:'dialoghead'});
+new Draggable('reservation', {onEnd:dragEnd});
+var jump_offset = new Date(Date.UTC(2012, 0, 1, 12)), interval = 2
+var cursor = new Date(Date.UTC(2012, 0, 30, 12))
+var url_balder = "/schedule/demo/Meeting_Rooms", download_url = "/schedule/download/demo/Meeting_Rooms"
+var view = "week", lang = 0, capacity = false
+var auth_write = true, grid = null
+var date_format = 0, time_format = 1, week_start = 0, currency = "$ "
+var default_length = 3600, daysonly = false, length_sel = false
+
+var chip_fields = ["resource_id", "start_time", "finish_time", "appointment_id", "created_by", "updated_by", "status", "description", "full_name"]
+var chip = {}
+
+var o = []
+chip[3134054] = o[0] = [1, 110787, new Date(1327881600000), new Date(1327885200000), 0, "2012-01-29 5:17pm", "2012-01-29 5:59pm", "", "1122", "Dave"]
+chip[3136416] = o[1] = [1, 110787, new Date(1327885200000), new Date(1327888800000), 0, "2012-01-30 2:19am", "", "", "cofee with someone", ""]
+chip[3138754] = o[2] = [1, 110789, new Date(1327969800000), new Date(1327987800000), 0, "2012-01-30 7:29am", "2012-01-30 9:19am", "", "THIS IS MY NAME", "fasdfasdfasdfa"]
+chip[3142951] = o[3] = [3, 110787, new Date(1327982400000), new Date(1327987800000), 0, "2012-01-30 2:34pm", "", "", "Early Risers", "Me"]
+chip[3143254] = o[4] = [1, 110788, new Date(1327991400000), new Date(1327995000000), 0, "2012-01-30 3:07pm", "", "", "fsd", "fsdf"]
+chip[3131586] = o[5] = [1, 110787, new Date(1328004000000), new Date(1328007600000), 0, "2012-01-29 12:31am by administrator", "", "", "Team meeting 1", ""]
+chip[3131592] = o[6] = [1, 110788, new Date(1328007600000), new Date(1328014800000), 0, "2012-01-29 12:31am by administrator", "", "", "Team meeting 2", ""]
+chip[3131598] = o[7] = [1, 110789, new Date(1328011200000), new Date(1328022000000), 0, "2012-01-29 12:31am by administrator", "2012-01-29 12:35pm", "", "Team meeting 3 student ", "Yumi Shinoda "]
+chip[3142936] = o[8] = [3, 110787, new Date(1328068800000), new Date(1328074200000), 0, "2012-01-30 2:34pm", "", "", "Early Risers", "Me"]
+chip[3136417] = o[9] = [1, 110787, new Date(1328074200000), new Date(1328077800000), 0, "2012-01-30 2:19am", "", "", "demo", ""]
+chip[3131587] = o[10] = [1, 110787, new Date(1328090400000), new Date(1328094000000), 0, "2012-01-29 12:31am by administrator", "", "", "Team meeting 1", ""]
+chip[3131599] = o[11] = [1, 110789, new Date(1328097600000), new Date(1328108400000), 0, "2012-01-29 12:31am by administrator", "", "", "Team meeting 3", ""]
+chip[3132248] = o[12] = [1, 110787, new Date(1328110200000), new Date(1328113800000), 0, "2012-01-29 6:42am", "", "", "", ""]
+chip[3139899] = o[13] = [1, 110787, new Date(1328142600000), new Date(1328146200000), 0, "2012-01-30 9:18am", "", "", "", ""]
+chip[3142937] = o[14] = [3, 110787, new Date(1328155200000), new Date(1328160600000), 0, "2012-01-30 2:34pm", "", "", "Early Risers", "Me"]
+chip[3133110] = o[15] = [1, 110789, new Date(1328185800000), new Date(1328189400000), 0, "2012-01-29 12:35pm", "", "", "booking ", "Yumi Shinoda "]
+chip[3142938] = o[16] = [3, 110787, new Date(1328241600000), new Date(1328247000000), 0, "2012-01-30 2:34pm", "", "", "Early Risers", "Me"]
+chip[3140406] = o[17] = [1, 110787, new Date(1328254200000), new Date(1328257800000), 0, "2012-01-30 10:10am", "", "", "qsd", ""]
+
+
+var res = [110787, 110788, 110789], dir = 0
+
+var local = false
+//--></script>
+
+
+</body>
+</html>
